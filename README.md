@@ -35,11 +35,9 @@ Bu proje, Node.js ve Socket.io kullanılarak geliştirilmiş basit bir real-time
 
 ### Bağımlılıklar
 
-Node.js
-
-Express
-
-Socket.io
+- Node.js
+- Express
+- Socket.io
 
 
 

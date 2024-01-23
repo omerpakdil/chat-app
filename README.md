@@ -11,7 +11,7 @@ Bu proje, Node.js ve Socket.io kullanılarak geliştirilmiş basit bir real-time
 
 2. Proje klasörüne gidin:
    ```
-   cd real-time-chat
+   cd chat-app
    ```
 
 3. Gerekli paketleri yüklemek için aşağıdaki komutu çalıştırın:

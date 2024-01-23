@@ -31,7 +31,7 @@ Bu proje, Node.js ve Socket.io kullanılarak geliştirilmiş basit bir real-time
 
 3. Chat uygulamasını kullanarak anlık mesajlaşmanın keyfini çıkarın!
 
-#### Not: Birden fazla sekme açarak real time chat yapabilirsiniz.
+#### Birden fazla sekme açarak real time chat yapabilirsiniz.
 
 ### Bağımlılıklar
 

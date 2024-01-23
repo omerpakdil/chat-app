@@ -10,18 +10,21 @@ Bu proje, Node.js ve Socket.io kullanılarak geliştirilmiş basit bir real-time
    git clone https://github.com/omerpakdil/chat-app.git
 
 2. Proje klasörüne gidin:
-
+   ```
    cd real-time-chat
+   ```
 
 3. Gerekli paketleri yüklemek için aşağıdaki komutu çalıştırın:
-
+   ```
    npm install
+   ```
 
 ## Kullanım
 
 1. Proje klasöründe aşağıdaki komutu çalıştırarak uygulamayı başlatın:
-
-  npm start
+   ```
+   npm start
+   ```
 
 
 2. Tarayıcınızı açın ve http://localhost:3000 adresine gidin.

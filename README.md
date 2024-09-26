@@ -1,6 +1,6 @@
-# Real-Time Chat Uygulaması
+# Real-Time Chat Application
 
-Bu proje, Node.js ve Socket.io kullanılarak geliştirilmiş basit bir real-time chat uygulamasını içerir.
+This project includes a simple real-time chat application developed using Node.js and Socket.io.
 
 ## Application Pictures
 
@@ -11,38 +11,41 @@ Bu proje, Node.js ve Socket.io kullanılarak geliştirilmiş basit bir real-time
 
 
 
-## Kurulum
+## Installation
 
-1. Proje klasörünü bilgisayarınıza kopyalayın:
+1. Clone the project repository to your computer:
 
    ```bash
    git clone https://github.com/omerpakdil/chat-app.git
 
-2. Proje klasörüne gidin:
+2. Navigate to the project folder:
+   
    ```
    cd chat-app
    ```
 
-3. Gerekli paketleri yüklemek için aşağıdaki komutu çalıştırın:
+3. Install the necessary packages:
+
    ```
    npm install
    ```
 
-## Kullanım
+## Usage
 
-1. Proje klasöründe aşağıdaki komutu çalıştırarak uygulamayı başlatın:
+1. Start the application by running the following command in the project folder:
+
    ```
    npm start
    ```
 
 
-2. Tarayıcınızı açın ve http://localhost:3000 adresine gidin.
+2. Open your browser and go to http://localhost:3000 from 2 different tabs. When you chat in one, look at the other tab.
 
-3. Chat uygulamasını kullanarak anlık mesajlaşmanın keyfini çıkarın!
+3. Enjoy real-time messaging using the chat application!
 
-#### Birden fazla sekme açarak real time chat yapabilirsiniz.
+#### You can open multiple tabs to experience real-time chat across different sessions.
 
-### Bağımlılıklar
+### Dependencies
 
 - Node.js
 - Express

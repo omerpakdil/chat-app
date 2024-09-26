@@ -4,7 +4,9 @@ Bu proje, Node.js ve Socket.io kullanılarak geliştirilmiş basit bir real-time
 
 ## Application Pictures
 
-![image](https://github.com/user-attachments/assets/24955682-2092-42f0-9911-8539848ac752)
+
+
+![image](https://github.com/user-attachments/assets/79f9265f-ad94-4e4b-8aaa-1f56e91c52b5)
 ![image](https://github.com/user-attachments/assets/1962201f-1f1d-45ec-9126-24ef0d569d8f)
 
 

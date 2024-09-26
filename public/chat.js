@@ -6,24 +6,58 @@ const btn = document.getElementById('send');
 const output = document.getElementById('output');
 const feedback = document.getElementById('feedback');
 
-btn.addEventListener('click', () => {
-    socket.emit('chat', {
-        message: message.value,
-        sender: sender.value
-    });
+// Store username in localStorage
+if (localStorage.getItem('username')) {
+    sender.value = localStorage.getItem('username');
+}
+
+btn.addEventListener('click', sendMessage);
+message.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        sendMessage();
+    } else {
+        socket.emit('typing', sender.value);
+    }
 });
 
+function sendMessage() {
+    if (message.value && sender.value) {
+        socket.emit('chat', {
+            message: message.value,
+            sender: sender.value
+        });
+        localStorage.setItem('username', sender.value);
+        message.value = '';
+    }
+}
 
 socket.on('chat', (data) => {
-    output.innerHTML += `<p><strong>${data.sender}: </strong>${data.message}</p>`;
-    message.value = '';
     feedback.innerHTML = '';
-});
-
-message.addEventListener('keypress', () => {
-    socket.emit('typing', sender.value);
+    output.innerHTML += `
+        <div class="message ${data.sender === sender.value ? 'own-message' : ''}">
+            <strong>${data.sender}</strong>
+            <p>${data.message}</p>
+        </div>
+    `;
+    output.scrollTop = output.scrollHeight;
 });
 
 socket.on('typing', (data) => {
-    feedback.innerHTML = `<p><em>${data} is typing a message...</em></p>`;
+    feedback.innerHTML = `<p><em>${data} is typing...</em></p>`;
+});
+
+// Auto focus
+window.onload = () => {
+    if (!sender.value) {
+        sender.focus();
+    } else {
+        message.focus();
+    }
+};
+
+// Add to the end of existing code
+
+socket.on('userCount', (count) => {
+    console.log('Number of connected users:', count);
+    document.getElementById('userCount').textContent = `Online: ${count}`;
 });

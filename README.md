@@ -2,6 +2,12 @@
 
 Bu proje, Node.js ve Socket.io kullanılarak geliştirilmiş basit bir real-time chat uygulamasını içerir.
 
+## Application Pictures
+
+![image](https://github.com/user-attachments/assets/ef389b2c-c54d-4486-97c0-5e22d5ac36f9)
+![image](https://github.com/user-attachments/assets/1962201f-1f1d-45ec-9126-24ef0d569d8f)
+
+
 ## Kurulum
 
 1. Proje klasörünü bilgisayarınıza kopyalayın:

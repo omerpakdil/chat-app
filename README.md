@@ -6,7 +6,7 @@ Bu proje, Node.js ve Socket.io kullanılarak geliştirilmiş basit bir real-time
 
 
 
-![image](https://github.com/user-attachments/assets/79f9265f-ad94-4e4b-8aaa-1f56e91c52b5)
+![image](https://github.com/user-attachments/assets/c98e00e4-1edc-4f71-85ee-af5e8f0572af)
 ![image](https://github.com/user-attachments/assets/e935af58-a715-4ae5-98ed-b40600838834)
 
 
